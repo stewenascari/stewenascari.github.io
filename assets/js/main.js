@@ -7,7 +7,6 @@ if(navigator.language == "en" || navigator.language == "pt_BR"){
     document.documentElement.lang = "en";
 
 }
-console.log(document.documentElement.lang)
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
