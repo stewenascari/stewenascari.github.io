@@ -12,28 +12,51 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
-        <title>Resume - Stewen Ascari</title>
+        <title data-en>Resume - Stewen Ascari</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
+                
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#hobbiesandinterests" class="nav__link">Hobbies & Interests</a></li>
-                        <li class="nav__item"><a href="https://stewenascari.github.io/Stewen Ascari - Currículo.pdf" target="_blank" class="nav__link">Resume</a></li>
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active" data-en>Home</a>
+                            <a href="#home" class="nav__link active" data-pt-br>Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link" data-en>About</a></li>
+                            <a href="#about" class="nav__link" data-pt-br>Sobre</a>
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link" data-en>Experience</a>
+                            <a href="#experience" class="nav__link" data-pt-br>Experiências</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link" data-en>Education</a>
+                            <a href="#education" class="nav__link" data-pt-br>Educação</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link" data-en>Skills</a>
+                            <a href="#skills" class="nav__link" data-pt-br>Habilidades</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#hobbiesandinterests" class="nav__link" data-en>Hobbies</a>
+                            <a href="#hobbiesandinterests" class="nav__link" data-pt-br>Hobbies</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://stewenascari.github.io/Stewen Ascari - Currículo.pdf" target="_blank" class="nav__link" data-en>Resume</a>
+                            <a href="https://stewenascari.github.io/Stewen Ascari - Currículo.pdf" target="_blank" class="nav__link" data-pt-br>CV</a>
+                        </li>
+                        <button class="nav__item" id="tt">Change language</button>
                     </ul>
                 </div>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
                 </div>
+
             </nav>
         </header>
 
@@ -41,7 +64,8 @@
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
                 <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Stewen</span><br> Software developer</h1>
+                    <h1 class="home__title" data-en>Hi,<br>I'am <span class="home__title-color">Stewen</span><br> Software developer</h1>
+                    <h1 class="home__title" data-pt-br>Olá,<br>Eu sou <span class="home__title-color">Stewen</span><br> Desenvolvedor</h1>
                 </div>
 
                 <div class="home__social">
@@ -65,20 +89,28 @@
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title" data-en>About</h2>
+                <h2 class="section-title" data-pt-br>Sobre</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
                         <img src="assets/img/about.jpg" alt="">
                     </div>
                     
-                    <div>
+                    <div data-en>
                         <h2 class="about__subtitle">I'am Stewen Ascari</h2>
                         <p class="about__text">Software developer, dynamic and resourceful for easy learning, focused on
                             conflict resolution, and oriented towards quick results. Knowledge focused on
                             software development, data structure, test quality, security auditing,
                             networks, artificial intelligence... In constant search for new knowledge!</p>           
-                    </div>                                   
+                    </div>
+                    <div data-pt-br>
+                        <h2 class="about__subtitle">Eu sou Stewen Ascari</h2>
+                        <p class="about__text">Desenvolvedor de software, dinâmico e engenhoso para fácil aprendizado, focado em
+                            resolução de conflitos e orientado para resultados rápidos. Conhecimento focado em
+                            desenvolvimento de software, estrutura de dados, qualidade de teste, auditoria de segurança,
+                            redes, inteligência artificial... Em busca constante de novos conhecimentos!</p>           
+                    </div>                                 
                 </div>
             </section>
 
@@ -86,7 +118,7 @@
             <section class="skills section" id="experience">
                 <h2 class="section-title">Experience</h2>
 
-                <div class="skills__container bd-grid">          
+                <div class="skills__container bd-grid" data-en>          
                     <div>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
@@ -144,6 +176,68 @@
                                 </p>
                             </div>
                             <div class="flex-shrink-0"><span class="skills__time">January 2019 - August 2019</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__container bd-grid" data-pt-br>          
+                    <div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="skills__subtitle">Desenvolvedor de Software</h3>
+                                <div class="skills__subtitle">Empresa: IBM - International Business Machines Corporation</div>
+                                <p class="skills__text">
+                                    Membro responsável por criar e manter funcionalidades no sistema, tanto no backend quanto no frontend.
+                                     As tecnologias utilizadas nos projetos são: maven, java 8, hibernate, aws, docker, docker compose, Spring Cloud feign, Spring, postgresql, AngularJS, TypeScript.
+                                </p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="skills__time">Dezembro 2021 - Atual</span></div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="skills__subtitle">Desenvolvedor de Software</h3>
+                                <div class="skills__subtitle">Empresa: Itix Tecnologia - Soluções Tecnológicas</div>
+                                <p class="skills__text">
+                                    Membro responsável por criar e manter funcionalidades no sistema, tanto no backend quanto no frontend.
+                                     As tecnologias utilizadas nos projetos são: maven, java 8, hibernate, Spring, postgresql, AngularJS, TypeScript.
+                                </p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="skills__time">Fevereiro 2021 - Dezembro 2021</span></div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="skills__subtitle">Desenvolvedor de Software Júnior</h3>
+                                <div class="skills__subtitle">Empresa: Indra Brasil Solucões e Serviços Tecnologicos SA</div>
+                                <p class="skills__text">
+                                    Membro responsável por criar e manter funcionalidades no sistema, tanto no backend quanto no frontend.
+                                     As tecnologias utilizadas nos projetos são: maven, java 8, hibernate, Spring, postgresql, AngularJS, TypeScript.
+                                </p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="skills__time">Maio 2020 - Fevereiro 2021</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="skills__subtitle">Desenvolvedor de Software Júnior</h3>
+                                <div class="skills__subtitle">Empresa: Koy - Inteligência Jurídica</div>
+                                <p class="skills__text">
+                                    Membro responsável por implementar automações no sistema utilizando scaping, manutenção e criação no backend.
+                                     Nas automações são utilizadas as seguintes tecnologias: selenium, python. No bankend são utilizadas as seguintes tecnologias: gradle, java, hibernate, postgresql.
+                                </p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="skills__time">Setembro 2019 - Maio 2020</span></div>
+                        </div>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="skills__subtitle">Desenvolvedor de Software Estagiário</h3>
+                                <div class="skills__subtitle">Empresa: PBPrev</div>
+                                <p class="skills__text">
+                                    Membro responsável pela implementação do portal Portal Segurado. Desenvolvido com: Spring boot, Sprint Data, Angular, Manipulação e definição de dados (DML e DDL).
+                                     Além do teste de qualidade automatizado, para teste de carga usando Jmeter e para teste de navegador, Selenium.
+                                </p>
+                            </div>
+                            <div class="flex-shrink-0"><span class="skills__time">Janeiro 2019 - Agosto 2019</span></div>
                         </div>
                     </div>
                 </div>
@@ -389,3 +483,4 @@
         <script src="assets/js/main.js"></script>
     </body>
 </html>
+<!DOCTYPE html>

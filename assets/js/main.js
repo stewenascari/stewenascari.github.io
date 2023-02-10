@@ -53,4 +53,26 @@ const sr = ScrollReveal({
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
+
+var el = document.getElementById('tt');
+el.addEventListener('click', function(e) {
+    var lang = document.documentElement.lang;
+	if (lang == "en"){
+        document.documentElement.lang = "pt-br"; console.log(document.documentElement.lang);
+    }
+	else if(lang == "pt-br") document.documentElement.lang = "en"; console.log(document.documentElement.lang);
+});
+
+// $("#tt").click(function () {
+// 	var lang = $("html").attr("lang");
+// 	if (lang == "en") $("html").attr("lang", "fr");
+// 	if (lang == "fr") $("html").attr("lang", "en");
+// });
+// $("#tt").click(function () {
+    
+//     console.log("ta aqui")
+// 	var lang = $("html").attr("lang");
+// 	if (lang == "en") $("html").attr("lang", "fr");
+// 	if (lang == "fr") $("html").attr("lang", "en");
+// });
