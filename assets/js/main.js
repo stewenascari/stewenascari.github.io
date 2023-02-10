@@ -1,4 +1,9 @@
 /*===== MENU SHOW =====*/ 
+document.documentElement.lang = navigator.language
+if(document.documentElement.lang != "en" || document.documentElement.lang != "pt_BR"){
+    document.documentElement.lang = "en"
+}
+console.log(document.documentElement.lang)
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
@@ -59,9 +64,9 @@ var el = document.getElementById('tt');
 el.addEventListener('click', function(e) {
     var lang = document.documentElement.lang;
 	if (lang == "en"){
-        document.documentElement.lang = "pt-br"; console.log(document.documentElement.lang);
+        document.documentElement.lang = "pt-BR"; console.log(document.documentElement.lang);
     }
-	else if(lang == "pt-br") document.documentElement.lang = "en"; console.log(document.documentElement.lang);
+	else if(lang == "pt-BR") document.documentElement.lang = "en"; console.log(document.documentElement.lang);
 });
 
 // $("#tt").click(function () {
