@@ -1,7 +1,11 @@
-/*===== MENU SHOW =====*/ 
-document.documentElement.lang = navigator.language
-if(document.documentElement.lang != "en" || document.documentElement.lang != "pt_BR"){
-    document.documentElement.lang = "en"
+/*===== MENU SHOW =====*/
+
+if(navigator.language == "en" || navigator.language == "pt_BR"){
+    document.documentElement.lang = navigator.language;
+
+}else{
+    document.documentElement.lang = "en";
+
 }
 console.log(document.documentElement.lang)
 const showMenu = (toggleId, navId) =>{
@@ -60,13 +64,17 @@ sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400
 sr.reveal('.home__social-icon',{ interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
-var el = document.getElementById('tt');
+var el = document.getElementById('button-bilingual');
 el.addEventListener('click', function(e) {
     var lang = document.documentElement.lang;
 	if (lang == "en"){
-        document.documentElement.lang = "pt-BR"; console.log(document.documentElement.lang);
+        document.documentElement.lang = "pt-BR";
+        // document.getElementById('text-bilingual-pt').innerHTML = "pt"
     }
-	else if(lang == "pt-BR") document.documentElement.lang = "en"; console.log(document.documentElement.lang);
+	else if(lang == "pt-BR") {
+        document.documentElement.lang = "en";
+        // document.getElementById('text-bilingual-en').innerHTML = "en"
+    }
 });
 
 // $("#tt").click(function () {

@@ -9,6 +9,7 @@
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
+
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 
@@ -16,6 +17,9 @@
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
     </head>
     <body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
@@ -49,7 +53,20 @@
                             <a href="https://stewenascari.github.io/Stewen Ascari - Currículo.pdf" target="_blank" class="nav__link" data-en>Resume</a>
                             <a href="https://stewenascari.github.io/Stewen Ascari - Currículo.pdf" target="_blank" class="nav__link" data-pt-br>CV</a>
                         </li>
-                        <button class="nav__item" id="tt">Change language</button>
+                        <li class="nav__item">
+                            <label class="toggle">
+                                <span class="toggle-label">en</span>
+                                <input class="toggle-checkbox" type="checkbox" id="button-bilingual">
+                                <div class="toggle-switch"></div>
+                                <span class="toggle-label">pt</span>
+                            </label>
+                          
+                        </div>
+                            <!-- <a class="btn btn-primary" role="button" id="button-bilingual"></a> -->
+                        </li>
+                        
+                        
+                    <!-- <button class="nav__item" id="tt">Change language</button> -->
                     </ul>
                 </div>
 
@@ -97,147 +114,172 @@
                         <img src="assets/img/about.jpg" alt="">
                     </div>
                     
-                    <div data-en>
-                        <h2 class="about__subtitle">I'am Stewen Ascari</h2>
-                        <p class="about__text">Software developer, dynamic and resourceful for easy learning, focused on
-                            conflict resolution, and oriented towards quick results. Knowledge focused on
-                            software development, data structure, test quality, security auditing,
-                            networks, artificial intelligence... In constant search for new knowledge!</p>           
-                    </div>
-                    <div data-pt-br>
-                        <h2 class="about__subtitle">Eu sou Stewen Ascari</h2>
-                        <p class="about__text">Desenvolvedor de software, dinâmico e engenhoso para fácil aprendizado, focado em
+                    <div>
+                        <h2 class="about__subtitle">
+                            <span data-en>I'am Stewen Ascari</span>
+                            <span data-pt-br>Eu sou Stewen Ascari</span>
+                        </h2>
+                        <p class="about__text">
+                            <span data-en>developer, dynamic and resourceful for easy learning, focused on
+                                conflict resolution, and oriented towards quick results. Knowledge focused on
+                                software development, data structure, test quality, security auditing,
+                                networks, artificial intelligence... In constant search for new knowledge!
+
+                        </span>
+                        <span data-pt-br>Desenvolvedor de software, dinâmico e engenhoso para fácil aprendizado, focado em
                             resolução de conflitos e orientado para resultados rápidos. Conhecimento focado em
                             desenvolvimento de software, estrutura de dados, qualidade de teste, auditoria de segurança,
-                            redes, inteligência artificial... Em busca constante de novos conhecimentos!</p>           
-                    </div>                                 
+                            redes, inteligência artificial... Em busca constante de novos conhecimentos!
+                        </span>
+                    </p>           
+                    </div>
+                                                  
                 </div>
             </section>
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="experience">
-                <h2 class="section-title">Experience</h2>
+                <h2 class="section-title" data-en>Experience</h2>
+                <h2 class="section-title"  data-pt-br>Experiências</h2>
 
-                <div class="skills__container bd-grid" data-en>          
+                <div class="skills__container bd-grid">          
                     <div>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Software Developer</h3>
-                                <div class="skills__subtitle">Company: IBM - International Business Machines Corporation</div>
+                                <h3 class="skills__subtitle">
+                                    <span data-en>Software Developer</span>
+                                    <span  data-pt-br>Desenvolvedor de Software</span>
+                                </h3>
+                                <div class="skills__subtitle">
+                                    <span data-en> Company: IBM - International Business Machines Corporation</span>
+                                    <span  data-pt-br>Empresa: IBM - International Business Machines Corporation</span>
+
+                                </div>
                                 <p class="skills__text">
+                                    <span data-en>
                                     Member responsible for creating and maintaining features in the system, both in the backend and in the frontend.
                                     The technologies used in the projects are: maven, java 8, hibernate, aws, docker, docker compose, Spring Cloud feign, Spring, postgresql, AngularJS, TypeScript.
+                                    </span>
+                                    <span  data-pt-br>
+                                        Membro responsável por criar e manter funcionalidades no sistema, tanto no backend quanto no frontend.
+                                         As tecnologias utilizadas nos projetos são: maven, java 8, hibernate, aws, docker, docker compose, Spring Cloud feign, Spring, postgresql, AngularJS, TypeScript.
+                                    </span>
                                 </p>
                             </div>
-                            <div class="flex-shrink-0"><span class="skills__time">December 2021 - Present</span></div>
+                            <div class="flex-shrink-0">
+                                <span class="skills__time" data-en>December 2021 - Present</span>
+                                <span class="skills__time"  data-pt-br>Dezembro 2021 - Atual</span>
+                            </div>
                         </div>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Software Developer</h3>
-                                <div class="skills__subtitle">Company: Itix Tecnologia - Soluções Tecnológicas</div>
-                                <p class="skills__text">
-                                    Member responsible for creating and maintaining features in the system, both in the backend and in the frontend.
-                                    The technologies used in the projects are: maven, java 8, hibernate, Spring, postgresql, AngularJS, TypeScript.
-                                </p>
-                            </div>
-                            <div class="flex-shrink-0"><span class="skills__time">February 2021 - December 2021</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Junior Software Developer</h3>
-                                <div class="skills__subtitle">Company: Indra Brasil Solucões e Serviços Tecnologicos SA</div>
-                                <p class="skills__text">
-                                    Member responsible for creating and maintaining features in the system, both in the backend and in the frontend.
-                                    The technologies used in the projects are: maven, java 8, hibernate, Spring, postgresql, AngularJS, TypeScript.
-                                </p>
-                            </div>
-                            <div class="flex-shrink-0"><span class="skills__time">May 2020 - February 2021</span></div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Junior Software Developer</h3>
-                                <div class="skills__subtitle">Company: Koy - Inteligência Jurídica</div>
-                                <p class="skills__text">
-                                    Member responsible for implementing automations in the system using scaping, maintenance and creation in the backend.
-                                    In automations the following technologies are used: selenium, python. In bankend the following technologies are used: gradle, java, hibernate, postgresql.
-                                </p>
-                            </div>
-                            <div class="flex-shrink-0"><span class="skills__time">September 2019 - May 2020</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Junior fullstack developer (Internship)</h3>
-                                <div class="skills__subtitle">Company: PBPrev</div>
-                                <p class="skills__text">
-                                    Member responsible for implementing the Portal Segurado website. Developed with: Spring boot, Sprint Data, Angular, Data manipulation and definition (DML and DDL).
-                                    In addition to automated quality testing, for load testing using Jmeter, and for browser testing, Selenium.
-                                </p>
-                            </div>
-                            <div class="flex-shrink-0"><span class="skills__time">January 2019 - August 2019</span></div>
-                        </div>
-                    </div>
-                </div>
+                                <h3 class="skills__subtitle">
+                                    <span data-en>Software Developer</span>
+                                    <span  data-pt-br>Desenvolvedor de Software</span>
+                                </h3>
+                                <div class="skills__subtitle">
+                                    <span data-en>Company: Itix Tecnologia - Soluções Tecnológicas</span>
+                                    <span  data-pt-br>Desenvolvedor de Software</span>
 
-                <div class="skills__container bd-grid" data-pt-br>          
-                    <div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Desenvolvedor de Software</h3>
-                                <div class="skills__subtitle">Empresa: IBM - International Business Machines Corporation</div>
+                                </div>
                                 <p class="skills__text">
-                                    Membro responsável por criar e manter funcionalidades no sistema, tanto no backend quanto no frontend.
-                                     As tecnologias utilizadas nos projetos são: maven, java 8, hibernate, aws, docker, docker compose, Spring Cloud feign, Spring, postgresql, AngularJS, TypeScript.
+                                    <span data-en>
+                                        Member responsible for creating and maintaining features in the system, both in the backend and in the frontend.
+                                        The technologies used in the projects are: maven, java 8, hibernate, Spring, postgresql, AngularJS, TypeScript.
+                                    </span>
+                                    <span  data-pt-br>
+                                        Membro responsável por criar e manter funcionalidades no sistema, tanto no backend quanto no frontend.
+                                         As tecnologias utilizadas nos projetos são: maven, java 8, hibernate, Spring, postgresql, AngularJS, TypeScript.
+                                    </span>
                                 </p>
                             </div>
-                            <div class="flex-shrink-0"><span class="skills__time">Dezembro 2021 - Atual</span></div>
+                            <div class="flex-shrink-0">
+                                <span class="skills__time" data-en>February 2021 - December 2021</span>
+                                <span class="skills__time"  data-pt-br>Fevereiro 2021 - Dezembro 2021</span>
+                            </div>
                         </div>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Desenvolvedor de Software</h3>
-                                <div class="skills__subtitle">Empresa: Itix Tecnologia - Soluções Tecnológicas</div>
+                                <h3 class="skills__subtitle">
+                                    <span data-en>Junior Software Developer</span>
+                                    <span  data-pt-br>Desenvolvedor de Software Júnior</span>
+                                </h3>
+                                <div class="skills__subtitle">
+                                    <span data-en>Company: Indra Brasil Solucões e Serviços Tecnologicos SA</span>
+                                    <span  data-pt-br>Empresa: Indra Brasil Solucões e Serviços Tecnologicos SA</span>
+
+                                </div>
                                 <p class="skills__text">
-                                    Membro responsável por criar e manter funcionalidades no sistema, tanto no backend quanto no frontend.
-                                     As tecnologias utilizadas nos projetos são: maven, java 8, hibernate, Spring, postgresql, AngularJS, TypeScript.
+                                    <span data-en>
+                                        Member responsible for creating and maintaining features in the system, both in the backend and in the frontend.
+                                        The technologies used in the projects are: maven, java 8, hibernate, Spring, postgresql, AngularJS, TypeScript.
+                                    </span>
+                                    <span  data-pt-br>
+                                        Membro responsável por criar e manter funcionalidades no sistema, tanto no backend quanto no frontend.
+                                         As tecnologias utilizadas nos projetos são: maven, java 8, hibernate, Spring, postgresql, AngularJS, TypeScript.
+                                    </span>
                                 </p>
                             </div>
-                            <div class="flex-shrink-0"><span class="skills__time">Fevereiro 2021 - Dezembro 2021</span></div>
-                        </div>
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Desenvolvedor de Software Júnior</h3>
-                                <div class="skills__subtitle">Empresa: Indra Brasil Solucões e Serviços Tecnologicos SA</div>
-                                <p class="skills__text">
-                                    Membro responsável por criar e manter funcionalidades no sistema, tanto no backend quanto no frontend.
-                                     As tecnologias utilizadas nos projetos são: maven, java 8, hibernate, Spring, postgresql, AngularJS, TypeScript.
-                                </p>
+                            <div class="flex-shrink-0">
+                                <span class="skills__time" data-en>May 2020 - February 2021</span>
+                                <span class="skills__time"  data-pt-br>Maio 2020 - Fevereiro 2021</span>
                             </div>
-                            <div class="flex-shrink-0"><span class="skills__time">Maio 2020 - Fevereiro 2021</span></div>
                         </div>
                     </div>
                     <div>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Desenvolvedor de Software Júnior</h3>
-                                <div class="skills__subtitle">Empresa: Koy - Inteligência Jurídica</div>
+                                <h3 class="skills__subtitle">
+                                    <span data-en>Junior Software Developer</span>
+                                    <span  data-pt-br>Desenvolvedor de Software Júnior</span>
+                                </h3>
+                                <div class="skills__subtitle">
+                                    <span data-en>Company: Koy - Inteligência Jurídica</span>
+                                    <span  data-pt-br>Empresa: Koy - Inteligência Jurídica</span>
+
+                                </div>
                                 <p class="skills__text">
-                                    Membro responsável por implementar automações no sistema utilizando scaping, manutenção e criação no backend.
-                                     Nas automações são utilizadas as seguintes tecnologias: selenium, python. No bankend são utilizadas as seguintes tecnologias: gradle, java, hibernate, postgresql.
+                                    <span data-en>
+                                        Member responsible for implementing automations in the system using scaping, maintenance and creation in the backend.
+                                        In automations the following technologies are used: selenium, python. In bankend the following technologies are used: gradle, java, hibernate, postgresql.
+                                    </span>
+                                    <span  data-pt-br>
+                                        Membro responsável por implementar automações no sistema utilizando scaping, manutenção e criação no backend.
+                                         Nas automações são utilizadas as seguintes tecnologias: selenium, python. No bankend são utilizadas as seguintes tecnologias: gradle, java, hibernate, postgresql.
+                                    </span>
                                 </p>
                             </div>
-                            <div class="flex-shrink-0"><span class="skills__time">Setembro 2019 - Maio 2020</span></div>
+                            <div class="flex-shrink-0">
+                                <span class="skills__time" data-en>September 2019 - May 2020</span>
+                                <span class="skills__time"  data-pt-br>Setembro 2019 - Maio 2020</span>
+                            </div>
                         </div>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Desenvolvedor de Software Estagiário</h3>
-                                <div class="skills__subtitle">Empresa: PBPrev</div>
+                                <h3 class="skills__subtitle">
+                                    <span data-en>Junior fullstack developer (Internship)</span>
+                                    <span  data-pt-br>Desenvolvedor de Software Júnior</span>
+                                </h3>
+                                <div class="skills__subtitle">
+                                    <span data-en>Company: PBPrev</span>
+                                    <span  data-pt-br>Empresa: Koy - Inteligência Jurídica</span>
+
+                                </div>
                                 <p class="skills__text">
-                                    Membro responsável pela implementação do portal Portal Segurado. Desenvolvido com: Spring boot, Sprint Data, Angular, Manipulação e definição de dados (DML e DDL).
-                                     Além do teste de qualidade automatizado, para teste de carga usando Jmeter e para teste de navegador, Selenium.
+                                    <span data-en>
+                                        Member responsible for implementing the Portal Segurado website. Developed with: Spring boot, Sprint Data, Angular, Data manipulation and definition (DML and DDL).
+                                        In addition to automated quality testing, for load testing using Jmeter, and for browser testing, Selenium.
+                                    </span>
+                                    <span  data-pt-br>
+                                        Membro responsável por implementar automações no sistema utilizando scaping, manutenção e criação no backend.
+                                         Nas automações são utilizadas as seguintes tecnologias: selenium, python. No bankend são utilizadas as seguintes tecnologias: gradle, java, hibernate, postgresql.
+                                    </span>
                                 </p>
                             </div>
-                            <div class="flex-shrink-0"><span class="skills__time">Janeiro 2019 - Agosto 2019</span></div>
+                            <div class="flex-shrink-0">
+                                <span class="skills__time" data-en>January 2019 - August 2019</span>
+                                <span class="skills__time"  data-pt-br>Janeiro 2019 - Agosto 2019</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -245,23 +287,42 @@
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="education">
-                <h2 class="section-title">Education</h2>
+                <h2 class="section-title" data-en>Education</h2>
+                <h2 class="section-title"  data-pt-br>Educação</h2>
 
                 <div class="skills__container bd-grid">          
                     <div>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Federal University of Paraiba</h3>
-                                <div class="skills__subtitle">Bachelor of Information systems</div>
+                                <h3 class="skills__subtitle">
+                                    <span data-en>University of Paraiba</span>
+                                    <span  data-pt-br>Universidade Federal Da Paraíba</span>
+                                </h3>
+                                <div class="skills__subtitle">
+                                    <span data-en>Bachelor of Information systems</span>
+                                    <span  data-pt-br>Sistemas de informação(Bacharelado)</span>
+                                </div>
                             </div>
-                            <div class="flex-shrink-0"><span class="skills__time">August 2006 - August 2018</span></div>
+                            <div class="flex-shrink-0">
+                                <span class="skills__time" data-en>August 2006 - August 2018</span>
+                                <span class="skills__time"  data-pt-br>Agosto 2006 - Agosto 2018</span>
+                            </div>
                         </div>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Udemy</h3>
-                                <div class="skills__subtitle">Automated Testing Course</div>
+                                <h3 class="skills__subtitle">
+                                    <span data-en>Udemy</span>
+                                    <span  data-pt-br>Udemy</span>
+                                </h3>
+                                <div class="skills__subtitle">
+                                    <span data-en>Automated Testing Course</span>
+                                    <span  data-pt-br>Curso de Testes Automatizados</span>
+                                </div>
                             </div>
-                            <div class="flex-shrink-0"><span class="skills__time">Online</span></div>
+                            <div class="flex-shrink-0">
+                                <span class="skills__time" data-en>Online</span>
+                                <span class="skills__time"  data-pt-br>Online</span>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -274,10 +335,19 @@
                         </div>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
-                                <h3 class="skills__subtitle">Ayty of Federal University of Paraiba</h3>
-                                <div class="skills__subtitle">Android Course</div>
+                                <h3 class="skills__subtitle">
+                                    <span data-en>Project Ayty of Federal University of Paraiba</span>
+                                    <span  data-pt-br>Projeto Ayty da Universidade Federal da Paraíba</span>
+                                </h3>
+                                <div class="skills__subtitle">
+                                    <span data-en>Android Course</span>
+                                    <span  data-pt-br>Curso de Android</span>
+                                </div>
                             </div>
-                            <div class="flex-shrink-0"><span class="skills__time">May 2016</span></div>
+                            <div class="flex-shrink-0">
+                                <span class="skills__time" data-en>May 2016</span>
+                                <span class="skills__time"  data-pt-br>Maio 2016</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,6 +356,7 @@
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
+                <h2 class="section-title" data-pt-br>Habilidades</h2>
 
                 <div class="skills__container bd-grid">          
                     <div>
@@ -430,7 +501,8 @@
 
             <!--===== WORK =====-->
             <section class="work section" id="hobbiesandinterests">
-                <h2 class="section-title">Hobbies & Interests</h2>
+                <h2 class="section-title" data-en>Hobbies & Interests</h2>
+                <h2 class="section-title" data-pt-br>Hobbies e Interesses</h2>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
@@ -439,11 +511,27 @@
                     
                     <div>
                         <p class="about__text">
-                            Apart from being a web developer, I enjoy I like to practice crossfit, the only sport that I enjoy nowadays.
+                            <span data-en>
+                                Apart from being a web developer, I enjoy I like to practice crossfit, the only sport that I enjoy nowadays.
+                            </span>
+                            <span  data-pt-br>
+                                Além de ser desenvolvedor web, gosto de praticar crossfit, único esporte que pratico hoje em dia.
+                            </span>
                         </p>
                         <p  class="about__text">
-                            When am indoors, I follow a number of sci-fi and fantasy genre movies and television shows, also anime, manga 
-                            and games .I am an aspiring chef, and I spend a little amount of my free time exploring the latest technology advancements in the web development world.
+                            <span data-en>
+                                When I'm at home, I like to do some programming that includes watching movies, series and anime, most of the time it's more anime &#128537;. <br>
+                                Reading is also not left out, I like to read
+                                some books aimed at my field (so I can improve my skills), some science fiction/fantasy books (the battle of the apocalypse, the boy in the pajamas
+                                striped, player number 1 and etc) and manga. Finally, I try to venture into cooking by testing some recipes that end up catching my attention (most of the time they are sweet &#128525;)
+                            </span>
+                            </span>
+                            <span  data-pt-br>
+                                Quando estou em casa, gosto de fazer algumas programações que incluem assistir filmes, séries e animes, na maioria das vezes é mais animes &#128537;. <br>
+                                Leitura também não fica de fora, gosto de ler 
+                                alguns livros voltados para minha área(para que eu possa melhorar minhas habilidades), alguns livros de ficção científica/fantasia(a batalha do apocalipse, o menino do pijama 
+                                listrado, jogador numero 1 e etc) e mangás. Por fim, tento me aventurar na culinária testando algumas receitas que acaba chamando minha atenção(na maioria das vezes são doces &#128525;)
+                            </span>
     
                         </p>          
                     </div>                                   
