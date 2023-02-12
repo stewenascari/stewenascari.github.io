@@ -1,51 +1,56 @@
 /*===== MENU SHOW =====*/
 console.log(navigator.language)
-if (navigator.language == "en"){
-    document.getElementById('text-bilingual').innerHTML = "pt"
-    console.log("ea")
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById('data-pt-br').style.display.setProperty(block);
+// if (navigator.language == "en"){
+//     document.getElementById('text-bilingual').innerHTML = "pt"
+//     console.log("ea")
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     console.log(document.documentElement.attributes.forEach(function(saas =>))
+    //         )
+    //     // document.getElementById('data-pt-br').style.display.setProperty(block);
         
-        document.getElementById('data-en').style.display.setAttribute(none);
-        // your code here
-      });
-}
-else if(navigator.language == "pt-BR") {
-    console.log(document.getElementById('data-pt-br').style)
-    document.getElementById('text-bilingual').innerHTML = "en"
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById('data-pt-br').style.display.setProperty(block);
-        
-        document.getElementById('data-en').style.display.setAttribute(none);
-        // your code here
-      });
-}
-// if(navigator.language == "en" || navigator.language == "pt_BR"){
-//     document.documentElement.lang = navigator.language;
-    
-
-// }else{
-//     document.documentElement.lang = "en";
+    //     // document.getElementById('data-en').style.display.setAttribute(none);
+    //     // your code here
+    //   });
+// }
+// if(navigator.language == "pt-BR") {
+//     console.log(document.getElementById('data-pt-br').style)
 //     document.getElementById('text-bilingual').innerHTML = "en"
-
+//     document.addEventListener("DOMContentLoaded", function () {
+//         console.log("ta aqui")
+//         document.getElementById('data-pt-br').style.display.setProperty(block);
+        
+//         document.getElementById('data-en').style.display.setAttribute(none);
+//         // your code here
+//       });
 // }
 
-function changeLanguage(lang){
-    if (lang == "en"){
-        document.getElementById('text-bilingual').innerHTML = "pt"
-        
-        document.getElementById('data-en').style.display = block
-        
-        document.getElementById('data-pt-br').style.display = none
-    }
-	else if(lang == "pt-BR") {
-        document.getElementById('text-bilingual').innerHTML = "en"
-        
-        document.getElementById('data-pt-br').style.display = block
-        
-        document.getElementById('data-en').style.display = none
-    }
+console.log(navigator.language == 'pt-BR')
+if(navigator.language.toString == "en"){
+    document.documentElement.lang = "en"
+
+}else if (navigator.language == "pt-BR"){
+    document.documentElement.lang = "pt-BR";
+
+}else{
+    document.documentElement.lang = "en"
 }
+
+// function changeLanguage(lang){
+//     if (lang == "en"){
+//         document.getElementById('text-bilingual').innerHTML = "pt"
+        
+//         document.getElementById('data-en').style.display = block
+        
+//         document.getElementById('data-pt-br').style.display = none
+//     }
+// 	else if(lang == "pt-BR") {
+//         document.getElementById('text-bilingual').innerHTML = "en"
+        
+//         document.getElementById('data-pt-br').style.display = block
+        
+//         document.getElementById('data-en').style.display = none
+//     }
+// }
 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),

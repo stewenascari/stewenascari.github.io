@@ -595,8 +595,9 @@ img {
   top: 2px;
 }
 
-:lang(en) [data-en] { display: block; }
+
+:lang(en) [data-en]{ display: block; }
 :lang(en) [data-pt-br] { display: none; }
 
 :lang(pt-BR) [data-pt-br] { display: block; }
-:lang(pt-BR) [data-en] { display: none; }
+:lang(pt-BR) [data-en]{ display: none; }
